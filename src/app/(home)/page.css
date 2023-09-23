@@ -1,0 +1,13 @@
+.home-page__paragraph {
+
+}
+
+.title-main__wrapper {
+    position: relative;
+}
+
+.line-decorative {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+}

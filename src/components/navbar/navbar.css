@@ -1,0 +1,34 @@
+nav {
+    background-color: #000;
+    color: #fff;
+}
+
+nav li a {
+    position: relative;
+}
+
+nav li a:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    right: 50%;
+    left: 50%;
+    background-color: #c00000;
+    transition: .2s ease-out;
+}
+
+nav li a:hover {
+    &:before {
+        right: 0;
+        left: 0;
+    }
+}
+
+.social-medium {
+    transition: color .2s ease-out;
+}
+
+.social-medium:hover {
+    color: #c00000;
+}

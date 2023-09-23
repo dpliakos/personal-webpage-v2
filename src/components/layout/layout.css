@@ -1,0 +1,14 @@
+
+.layout {
+    display: flex;
+    height: 100%;
+}
+
+.layout__inner {
+    /*margin-right: auto;*/
+    /*margin-left: 300px;*/
+    /*margin-top: 150px;*/
+    margin: auto;
+    max-width: 500px;
+    min-width: 500px;
+}
