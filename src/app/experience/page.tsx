@@ -3,40 +3,41 @@ import React from 'react';
 import "./page.css";
 import {JobRole} from "@/models/job-role";
 import {DecoratedList} from "@/components/decorated-list/decorated-list";
+import {ResponsibilitiesEnum} from "@/models/responsibilities";
 
 const experience: JobRole[] = [
   {
     company: 'efood',
     role: 'Software Engineer',
-    description: 'Software development, Software architecture, DevOps',
+    description: [ResponsibilitiesEnum.sArchDev, ResponsibilitiesEnum.devops].join(', '),
   }, {
     company: 'Savium',
     role: 'Senior Software Engineer',
-    description: 'Team lead, Software architecture, Software development, DevOps'
+    description: [ResponsibilitiesEnum.tl, ResponsibilitiesEnum.pDev, ResponsibilitiesEnum.sArchDev, ResponsibilitiesEnum.devops].join(', '),
   }, {
     company: 'UniverSIS',
     role: 'Web Developer',
-    description: 'Software development, DevOps, Interns\' Mentor',
+    description: [ResponsibilitiesEnum.sDev, ResponsibilitiesEnum.devops, ResponsibilitiesEnum.internMentor].join(', '),
   }, {
     company: 'OpenSCN',
     role: 'Founder',
-    description: 'Team Lead, Product Development, Software architecture, Software Development, DevOps',
+    description: [ResponsibilitiesEnum.tl, ResponsibilitiesEnum.pDev, ResponsibilitiesEnum.sArchDev, ResponsibilitiesEnum.devops].join(', '),
   }, {
     company: 'Bear In Mind',
     role: 'Web Developer',
-    description: 'Software development, Team Lead',
+    description: [ResponsibilitiesEnum.sDev, ResponsibilitiesEnum.tl].join(', '),
   }, {
     company: 'Point Blank',
     role: 'Web Developer',
-    description: 'Software development',
+    description: ResponsibilitiesEnum.sDev,
   }, {
     company: 'Google Summer Of Code',
     role: 'Participant',
-    description: 'Student',
+    description: ResponsibilitiesEnum.student,
   }, {
     company: 'International Hellenic University',
     role: 'Student',
-    description: 'Bachelor\'s degree',
+    description: ResponsibilitiesEnum.bsc,
   }
 ];
 
