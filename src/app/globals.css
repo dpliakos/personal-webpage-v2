@@ -28,11 +28,20 @@
 /*}*/
 
 .header {
-    background-color: #000000;
-    color: #fff;
+
+    position: relative;
 }
 
 *::selection {
     background-color: #c00000;
     color: white;
+}
+
+.header__inner {
+    position: fixed;
+    width: 100%;
+    max-width: 33%;
+    height: 100%;
+    background-color: #000000;
+    color: #fff;
 }

@@ -22,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} grid grid-cols-3 h-screen w-full`}>
-        <header className="col col-span-1 header">
-          <Navbar pages={navigationLinks} socialMedia={socialMedia} />
+        <header className="header">
+          <div className="col col-span-1 header__inner">
+            <Navbar pages={navigationLinks} socialMedia={socialMedia} />
+          </div>
         </header>
         <main className="col col-span-2 h-full">
           <Layout>
