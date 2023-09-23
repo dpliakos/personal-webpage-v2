@@ -1,27 +1,10 @@
-import {LineDecorative} from "@/app/(home)/line-decorative/line-decorative";
 import React from 'react';
-import {JobRole} from "@/models/job-role";
 import {DecoratedList} from "@/components/decorated-list/decorated-list";
-
-const experience: JobRole[] = [
-  {
-    company: 'IEEE IHU Student Branch',
-    role: 'Mentor',
-    description: 'Community mentor, former member',
-  }, {
-    company: 'OpenSCN',
-    role: 'Founder',
-    description: 'Collaborative product and software development',
-  }, {
-    company: 'Lambda Space',
-    role: 'Member',
-    description: 'Events\' organizer & presenter, Hardware and software projects'
-  }
-];
+import {communityParticipation} from "@/content/community-participation";
 
 const Page = () => {
 
-  const listItems = experience.map(item => {
+  const listItems = communityParticipation.map(item => {
     return ({
       header: (
         <div className="mt-5">

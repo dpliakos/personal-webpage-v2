@@ -7,7 +7,6 @@ interface DecoratedListProps {
   className?: string;
 }
 
-
 export const DecoratedList: React.FC<DecoratedListProps> = (props) => {
 
   const content = props.items.map((item, i) => (
