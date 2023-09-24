@@ -7,7 +7,7 @@ export const socialMedia: ISocialMedium[] = [
     label: 'Gitlab',
   },
   {
-    href: 'https://gihub.com/dpliakos',
+    href: 'https://github.com/dpliakos',
     name: 'github',
     label: 'GitHub',
   },

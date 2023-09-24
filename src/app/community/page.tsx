@@ -10,7 +10,7 @@ const Page = () => {
     return ({
       header: (
         <div className="mt-5">
-          <span className=" text-lg font-bold"> {item.company} </span>: <span> {item.role} </span>
+          <span className="text-lg font-bold">{item.company}</span>: <span> {item.role} </span>
         </div>
       ),
       body: <span className="text-gray-400 text-sm"> {item.description} </span>
