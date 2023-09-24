@@ -23,14 +23,14 @@ export const Navbar = (props: NavbarProps) => {
   ));
 
   return (
-    <div className="h-full flex justify-end mr-10">
+    <div className="h-full flex justify-end mr-5 lg:mr-10">
       <div className="text-end align-middle flex flex-col mt-auto mb-auto">
         <div className="flex justify-end">
           <Logo />
         </div>
         <div className="mt-10">
-          <h3 className="text-4xl"> Dimitrios Pliakos </h3>
-          <span className="text-xl"> Software Engineer <br /> Specializing in Product Development </span>
+          <h3 className="text-2xl  lg:text-4xl"> Dimitrios Pliakos </h3>
+          <span className="text-base lg:text-xl"> Software Engineer <br /> Specializing in Product Development </span>
         </div>
         <div className="mt-10 flex justify-end spacing">
           { socialMedia }
