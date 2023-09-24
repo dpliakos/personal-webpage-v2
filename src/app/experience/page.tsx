@@ -1,6 +1,8 @@
 import React from 'react';
 import {DecoratedList} from "@/components/decorated-list/decorated-list";
 import {jobRoles} from "@/content/job-roles";
+import {ResetScale} from "@/components/utils/reset-scale/reset-scale";
+import {PageHeader} from "@/components/page-header/page-header";
 
 
 const Page = () => {
@@ -18,10 +20,9 @@ const Page = () => {
 
   return (
     <div>
-      <div className="title-main__wrapper">
-        <h1 className="title-main text-7xl font-bold"> Experience </h1>
-      </div>
+      <PageHeader title="Experience" />
       <DecoratedList items={listItems} className="mt-10" />
+      <ResetScale />
     </div>
   );
 }

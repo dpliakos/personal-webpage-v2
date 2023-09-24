@@ -1,0 +1,30 @@
+.title-main__wrapper-outer {
+    text-align: center;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.title-main__wrapper-inner {
+    position: relative;
+    display: inline-block;
+}
+
+.line-decorative {
+    position: absolute;
+    bottom: -45px;
+    left: 90px;
+    width: 230px;
+
+    @media screen and (min-width: 768px) {
+        bottom: -40px;
+        right: -40px;
+        width: 400px;
+    }
+}
+
+.title-main {
+    margin: 0;
+}

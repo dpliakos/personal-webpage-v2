@@ -1,7 +1,7 @@
-import {LineDecorative} from "@/app/(home)/line-decorative/line-decorative";
 import React from 'react';
 import {personalStatements} from "@/content/personal-statements";
-import "./page.css";
+import {ResetScale} from "@/components/utils/reset-scale/reset-scale";
+import {PageHeader} from "@/components/page-header/page-header";
 
 
 const Page = () => {
@@ -14,11 +14,9 @@ const Page = () => {
 
   return (
     <div>
-      <div className="title-main__wrapper">
-        <h1 className="title-main text-7xl font-bold mb-20"> @dpliakos </h1>
-        <LineDecorative className="line-decorative" />
-      </div>
+      <PageHeader title="@dpliakos" signatureLine />
       {paragraphs}
+      <ResetScale />
     </div>
   );
 }
