@@ -30,7 +30,7 @@ export default function RootLayout({
             <Navbar pages={navigationLinks} socialMedia={socialMedia} />
           </div>
         </header>
-        <main className="col col-span-2 h-full main">
+        <main className="col col-span-2 min-h-full main">
           <Layout>
             {children}
           </Layout>

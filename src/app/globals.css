@@ -48,7 +48,6 @@ main {
     transition: 0.4s ease-out;
     right: 0;
     position: absolute;
-    z-index: 100;
     background-color: white;
     border-radius: 0;
     width: 100%;
