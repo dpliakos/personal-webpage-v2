@@ -64,14 +64,9 @@ body.mobile-menu-open > main {
     width: 600px;
     border-radius: 50px;
     top: 0;
-    scale: 0;
-    right: -600px;
+    right: -300px;
+    scale: 0.4;
     overflow: scroll;
-
-    @media screen and (min-width: 300px) {
-        right: -300px;
-        scale: 0.4;
-    }
 
     @media screen and (min-width: 400px) {
         scale: 0.6;
