@@ -39,11 +39,21 @@
 }
 
 .header__bar-fs {
-    display: none;
+    /*display: none;*/
     position: absolute;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    left: -100%;
+    transition: .4s ease-out;
 }
 
 body.mobile-menu-open .header__bar-fs {
+    left: 0;
     height: 100vh;
     max-height: 100vh;
     width: 100%;

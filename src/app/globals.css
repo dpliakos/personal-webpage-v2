@@ -35,6 +35,7 @@
 
 body {
     position: relative;
+    background-color: black;
 }
 
 
@@ -43,15 +44,27 @@ body.mobile-menu-open {
     overflow: hidden;
 }
 
+main {
+    transition: 0.4s ease-out;
+    right: 0;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    border-radius: 0;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 66%;
+    }
+}
+
 body.mobile-menu-open > main {
     width: 600px;
-    position: absolute;
-    background-color: white;
     border-radius: 50px;
     top: 0;
     scale: 0;
-    transition: 0.5s ease-out scale;
     right: -600px;
+    overflow: scroll;
 
     @media screen and (min-width: 300px) {
         right: -300px;
@@ -60,6 +73,13 @@ body.mobile-menu-open > main {
 
     @media screen and (min-width: 400px) {
         scale: 0.6;
+    }
+
+    @media screen and (min-width: 768px) {
+        scale: 1;
+        right: 0;
+        width: 66%;
+        border-radius: 0;
     }
 }
 

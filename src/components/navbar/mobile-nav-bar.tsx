@@ -22,16 +22,7 @@ export const MobileNavBar: React.FC<MobileNavBarProps> = (props) => {
 
 
   const handleClick = () => {
-    const classes = document.getElementsByTagName('body')[0].className.split(' ');
-    const classesSet = new Set(classes);
-
-    if (classes.includes('mobile-menu-open')) {
-      classesSet.delete('mobile-menu-open');
-      document.getElementsByTagName('body')[0].className = Array.from(classesSet).join(' ');
-    } else {
-      classesSet.add('mobile-menu-open');
-      document.getElementsByTagName('body')[0].className = Array.from(classesSet).join(' ');
-    }
+    resetScale(true);
   }
 
   return (

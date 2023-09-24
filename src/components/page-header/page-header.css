@@ -10,6 +10,7 @@
 .title-main__wrapper-inner {
     position: relative;
     display: inline-block;
+    /*overflow-x: hidden;*/
 }
 
 .line-decorative {

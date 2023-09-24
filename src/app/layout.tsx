@@ -23,10 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} md:grid md:grid-cols-3 h-screen w-full`}>
-        <header className="header">
+      <body className={`${inter.className} mid:grid mid:grid-cols-3 h-screen w-full`}>
+        <header className="header mid:col mid:col-span-1 ">
           <MobileNavBar />
-          <div className="col col-span-1 header__inner">
+          <div className="header__inner">
             <Navbar pages={navigationLinks} socialMedia={socialMedia} />
           </div>
         </header>
