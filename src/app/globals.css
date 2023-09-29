@@ -61,6 +61,7 @@ main {
 }
 
 body.mobile-menu-open {
+    max-width: 100vw;
     overflow-x: hidden;
 }
 
