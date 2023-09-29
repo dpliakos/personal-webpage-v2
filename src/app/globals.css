@@ -60,6 +60,10 @@ main {
     }
 }
 
+body.mobile-menu-open {
+    overflow-x: hidden;
+}
+
 body.mobile-menu-open > main {
     width: 600px;
     border-radius: 50px;
