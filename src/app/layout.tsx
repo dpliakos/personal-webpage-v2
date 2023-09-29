@@ -8,6 +8,8 @@ import {socialMedia} from "@/content/social-media";
 import './globals.css'
 import {MobileNavBar} from "@/components/navbar/mobile-nav-bar";
 import {ResetScale} from "@/components/utils/reset-scale/reset-scale";
+import {resetScale} from "@/components/utils/reset-scale/utils";
+import {ResetScaleOverlay} from "@/components/reset-scale-overlay/reset-scale-overlay";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +33,7 @@ export default function RootLayout({
           </div>
         </header>
         <main className="col col-span-2 min-h-full main">
+          <ResetScaleOverlay />
           <Layout>
             {children}
           </Layout>
