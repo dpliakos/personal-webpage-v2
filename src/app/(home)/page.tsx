@@ -7,7 +7,7 @@ import {PageHeader} from "@/components/page-header/page-header";
 const Page = () => {
 
   const paragraphs = personalStatements.map( (claim: string, i) => (
-    <p className="mt-10 home-page__paragraph" key={`claim-${i}`}>
+    <p className={`${i === 0 ? 'mt-20' : 'mt-10'} home-page__paragraph`} key={`claim-${i}`}>
       {claim}
     </p>
   ));
