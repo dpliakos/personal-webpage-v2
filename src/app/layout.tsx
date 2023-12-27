@@ -10,6 +10,7 @@ import {MobileNavBar} from "@/components/navbar/mobile-nav-bar";
 import {ResetScale} from "@/components/utils/reset-scale/reset-scale";
 import {resetScale} from "@/components/utils/reset-scale/utils";
 import {ResetScaleOverlay} from "@/components/reset-scale-overlay/reset-scale-overlay";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,6 +37,7 @@ export default function RootLayout({
           <ResetScaleOverlay />
           <Layout>
             {children}
+            <Analytics />
           </Layout>
         </main>
       </body>
