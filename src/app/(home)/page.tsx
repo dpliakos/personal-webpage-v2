@@ -14,7 +14,7 @@ const Page = () => {
 
   return (
     <div>
-      <PageHeader title="@dpliakos" signatureLine />
+      <PageHeader title="@dpliakos" />
       {paragraphs}
       <ResetScale />
     </div>
